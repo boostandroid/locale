@@ -23,7 +23,9 @@
 #include <wctype.h>
 #include <ctype.h>
 #include <langinfo.h>
+#if !defined(ANDROID)
 #include <monetary.h>
+#endif
 #include <errno.h>
 #include "../util/numeric.hpp"
 #include "all_generator.hpp"
